@@ -6,6 +6,8 @@
   font-size: 2rem;
   padding-top: 1%;
   padding-left: 1%;
+  /* background-image: linear-gradient(lightblue, orange, sienna); */
+  background-image: url(../sw-bg.jpg);
   box-shadow:
   /* The top layer shadow */ 0px 1px 1px rgba(0, 0, 0, 0.15),
     /* The second layer */ 10px 10px 0 -5px lightgray,
