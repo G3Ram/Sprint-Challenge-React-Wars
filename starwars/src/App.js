@@ -36,17 +36,34 @@ class App extends Component {
   };
 
   render() {
+    const prevLink = this.state.prev;
+    console.log("-------prev link is -------" + prevLink);
+    const nextLink = this.state.next;
+    let prevButton;
+    let nextButton;
+
+    // Displays previous button only if it is not null
+    if (prevLink !== null) {
+      console.log("prev link is not null");
+      prevButton = (
+        <button
+          className="paginationBtn"
+          onClick={() => this.getCharacters(this.state.prev)}
+        >
+          Previous
+        </button>
+      );
+    } else {
+      console.log("prev link is null");
+      prevButton = "";
+    }
+
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
         <StartWarsList characters={this.state.starwarsChars} />
         <div className="pagination">
-          <button
-            className="paginationBtn"
-            onClick={() => this.getCharacters(this.state.prev)}
-          >
-            Previous
-          </button>
+          {prevButton}
           <button
             className="paginationBtn"
             onClick={() => this.getCharacters(this.state.next)}
