@@ -11,9 +11,11 @@ function StarWarsCard(props) {
       <p className="cardText">Birth year: {props.character.birth_year}</p>
       <p className="cardText">Gender: {props.character.gender}</p>
       <p className="cardText"> Movies:</p>
-      {props.character.films.map((film, index) => (
-        <Film key={index} film={film} />
-      ))}
+      <ol className="filmNameText">
+        {props.character.films.map((film, index) => (
+          <Film key={index} film={film} />
+        ))}
+      </ol>
     </div>
   );
 }

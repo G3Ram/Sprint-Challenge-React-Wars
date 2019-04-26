@@ -29,7 +29,7 @@ class Film extends React.Component {
   };
 
   render() {
-    return <div className="filmNameText">Within film name</div>;
+    return <li>{this.state.filmName}</li>;
   }
 }
 
