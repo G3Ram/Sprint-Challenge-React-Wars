@@ -5,4 +5,30 @@
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
+
 /* write your parent styles in here for your App.js */
+
+.pagination {
+  width: 95%;
+  height: 100px;
+  margin: 2%;
+  text-align: center;
+  padding-top: 50px;
+  border: 1px solid blue;
+  font-size: 2rem;
+}
+
+.paginationBtn {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  padding: 0 20px;
+  margin: 0 20px;
+  border-radius: 6px;
+  width: 150px;
+}
+
+.paginationBtn:hover {
+  color: black;
+}

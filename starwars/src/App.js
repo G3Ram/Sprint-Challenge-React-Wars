@@ -24,7 +24,11 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        this.setState({
+          starwarsChars: data.results,
+          prev: data.previous,
+          next: data.next
+        });
       })
       .catch(err => {
         throw new Error(err);
@@ -36,6 +40,20 @@ class App extends Component {
       <div className="App">
         <h1 className="Header">React Wars</h1>
         <StartWarsList characters={this.state.starwarsChars} />
+        <div className="pagination">
+          <button
+            className="paginationBtn"
+            onClick={() => this.getCharacters(this.state.prev)}
+          >
+            Previous
+          </button>
+          <button
+            className="paginationBtn"
+            onClick={() => this.getCharacters(this.state.next)}
+          >
+            Next
+          </button>
+        </div>
       </div>
     );
   }

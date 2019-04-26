@@ -3,7 +3,7 @@ import StarWarsCard from "./StarWarsCard";
 
 function StartWarsList(props) {
   return (
-    <div class="container">
+    <div className="container">
       {props.characters.map((character, index) => (
         <StarWarsCard key={index} character={character} />
       ))}

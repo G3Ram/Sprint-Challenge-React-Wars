@@ -4,7 +4,7 @@ import Film from "./Film";
 
 function StarWarsCard(props) {
   return (
-    <div class="card">
+    <div className="card">
       <p className="cardText">Name: {props.character.name}</p>
       <p className="cardText">Height: {props.character.height}</p>
       <p className="cardText">Hair color: {props.character.hair_color}</p>
