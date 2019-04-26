@@ -14,7 +14,6 @@
   margin: 2%;
   text-align: center;
   padding-top: 50px;
-  border: 1px solid blue;
   font-size: 2rem;
 }
 
@@ -27,8 +26,20 @@
   margin: 0 20px;
   border-radius: 6px;
   width: 150px;
+  border: 2px solid darkgray;
 }
 
 .paginationBtn:hover {
   color: brown;
+}
+
+.paginationBtnDisabled {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  padding: 0 20px;
+  margin: 0 20px;
+  border-radius: 6px;
+  width: 150px;
 }
